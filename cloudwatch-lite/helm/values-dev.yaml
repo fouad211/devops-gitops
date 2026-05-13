@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/fouad211/cloudwatch-lite-platform
-  tag: 859556399459181bda0c86b347da622419a9a48d
+  tag: 970e3237b31a21e31b60e5591d1050631ceeacc4
   pullPolicy: Always
 
 service:
