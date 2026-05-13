@@ -18,9 +18,11 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 3000
-          env:
-            - name: PORT
-              value: "{{ .Values.env.PORT }}"
+          envFrom:
+            - configMapRef:
+                name: opsboard-enterprise-config
+            - secretRef:
+                name: opsboard-enterprise-secret
           resources:
             requests:
               cpu: "100m"
