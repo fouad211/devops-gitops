@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/fouad211/opsboard-enterprise
-  tag: latest
+  tag: 117f2f1ff4c69ac992585332ed7ab2b1782787ed
   pullPolicy: Always
 
 service:
